@@ -1,0 +1,25 @@
+{
+  "name": "angular-unit-test",
+  "version": "1.0.0",
+  "description": "Angular unit test",
+  "main": "index.js",
+  "scripts": {
+    "test": "ng test local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielChuDC/angular-unit-test.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "DanielChu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielChuDC/angular-unit-test/issues"
+  },
+  "homepage": "https://github.com/DanielChuDC/angular-unit-test#readme",
+  "dependencies": {
+    "@angular/cli": "^7.3.9"
+  }
+}
