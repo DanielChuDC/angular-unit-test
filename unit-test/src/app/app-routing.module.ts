@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutsModule } from './layouts/layouts.module';
+import { FullComponent } from './layouts/full/full.component';
 
 const routes: Routes = [
   {
-    path: 'layouts',
-    loadChildren: () => import('./layouts/layouts.module').then(mod => mod.LayoutsModule)
+    path: '',
+    component: FullComponent,
+    children: [
+      {
+        path: 'pages',
+        loadChildren: () => import('./pages/pages.module').then(mod => mod.PagesModule)
+      }
+    ]
   },
+
   {
     path: 'newlayouts',
     loadChildren: () =>
